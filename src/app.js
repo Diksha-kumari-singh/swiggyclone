@@ -4,7 +4,7 @@ import Home from "./component/Home";
 import Hoteloption from "./component/hoteloption";
 import Restdata from "./component/Restdata.js";
 import { BrowserRouter,Route,Routes} from "react-router";
-import MenuCard from "./component/MenuCard.js";
+import MenuCard from "./component/Menucard.js";
 
 import SecondaryHome from "./component/SecondaryHome";
 import { store } from "./stored/stores";
