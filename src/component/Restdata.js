@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import MenuCard from "./MenuCard"
+import MenuCard from "./Menucard"
 import { Link } from "react-router";
 
 
@@ -34,9 +34,9 @@ export default function RestaurantMenu(){
         <div>
 
         <div className="w-[80%] mx-auto mt-20 mb-20">
-          <Link to={`/city/delhi/${id}/search`}>
+          
           <p className="w-full text-center py-4 rounded-4xl bg-gray-200 text-2xl">Search for Dishes</p>
-          </Link>
+          
         </div>  
 
         <div className="w-[80%] mx-auto mt-20 mb-20">
