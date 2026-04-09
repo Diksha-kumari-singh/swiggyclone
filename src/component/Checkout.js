@@ -51,7 +51,8 @@ export default function Checkout(){
           </div>
 
             <p className="font-semibold text-lg text-gray-800">
-                ₹ {value.defaultPrice / 100 * value.quantity}
+                ₹ {"defaultPrice" in value ? value?.defaultPrice/100:value?.price/100 * value.quantity}
+                
             </p>
             </div>
             ))}
@@ -68,7 +69,7 @@ export default function Checkout(){
           ₹{" "}
           {items.reduce(
             (total, item) =>
-              total + (item.defaultPrice / 100) * item.quantity,
+              total + ("defaultPrice" in item ? item?.defaultPrice/100:item?.price/100 ) * item.quantity,
             0
           )}
         </span>
